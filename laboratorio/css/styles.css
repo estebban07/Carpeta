@@ -1,0 +1,343 @@
+/* styles.css */
+
+/* ----- RESETEO GENERAL Y ESTILOS BASE ----- */
+/* Reseteo universal para eliminar márgenes y paddings por defecto, y usar border-box para el modelo de caja */
+* {
+    box-sizing: border-box;
+    /* Asegura que el padding y el border se incluyan en el ancho y alto total */
+    margin: 0;
+    /* Elimina los márgenes por defecto. Un margen es el espacio que hay entre los elementos */
+    padding: 0;
+    /* Elimina el relleno por defecto. El relleno es el espacio que hay dentro del elemento */
+}
+
+/* Estilos base para el cuerpo del documento: fuente, interlineado y color de texto */
+body {
+    font-family: Arial,
+        sans-serif;
+    line-height: 1.6;
+    /* Ajusta el interlineado. El interlineado es el espacio entre las líneas de texto */
+    color: #333;
+    /* Color de texto. El color es el color del texto */
+}
+
+/* ----- BARRA DE NAVEGACIÓN (NAVBAR) ----- */
+.navbar {
+    background: #1a1a1a;
+    /* Color de fondo oscuro */
+    color: #fff;
+    /* Color de texto blanco */
+    display: flex;
+    /* Habilita Flexbox para alinear elementos (de izquierda a derecha) */
+    align-items: center;
+    /* Centra verticalmente (de arriba a abajo) los elementos */
+    justify-content: space-between;
+    /* Distribuye el espacio entre los elementos (izquierda y derecha) */
+    padding: 15px 40px;
+    /* Relleno interior (arriba/abajo, izquierda/derecha) */
+    position: fixed;
+    /* Fija la barra de navegación en la parte superior de la ventana */
+    top: 0;
+    /* Pega la barra en la parte superior */
+    left: 0;
+    /* Asegura que la barra ocupe todo el ancho desde la izquierda */
+    right: 0;
+    /* Asegura que la barra ocupe todo el ancho hasta la derecha */
+    z-index: 1000;
+    /* Asegura que la barra esté por encima de otros elementos */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para dar profundidad */
+}
+
+/* Estilos para la imagen del logo dentro de la barra de navegación */
+.logo img {
+    height: 40px;
+    /* Altura de la imagen */
+    width: auto;
+    /* Ancho automático para mantener la proporción */
+    object-fit: contain;
+    /* Asegura que la imagen se vea completa sin distorsión */
+}
+
+/* Estilos para el botón de menú hamburguesa (visible en móviles) */
+.toggle-menu {
+    display: none;
+    /* Oculto por defecto */
+    background: none;
+    /* Sin fondo */
+    border: none;
+    /* Sin borde */
+    font-size: 1.8rem;
+    /* Tamaño de la fuente (icono) */
+    color: #fff;
+    /* Color del icono */
+    cursor: pointer;
+    /* Cambia el cursor a una mano */
+}
+
+/* Estilos para la lista del menú */
+.menu {
+    list-style: none;
+    /* Quita los puntos de la lista */
+    display: flex;
+    /* Habilita Flexbox para alinear los elementos del menú (de izquierda a derecha) */
+    gap: 30px;
+    /* Espacio entre los elementos del menú */
+}
+
+/* Estilos para los enlaces del menú */
+.menu li a {
+    color: #fff;
+    /* Color del texto */
+    text-decoration: none;
+    /* Quita el subrayado */
+    font-weight: 500;
+    /* Grosor de la fuente */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    transition: color 0.3s ease;
+    /* Transición suave para el cambio de color */
+}
+
+/* Estilos para los enlaces del menú al pasar el cursor */
+.menu li a:hover {
+    color: #00adb5;
+    /* Cambia el color del texto al pasar el cursor */
+}
+
+/* ----- ICONO DE NAVEGACIÓN (IMAGEN) ----- */
+.nav-icon {
+    height: 40px;
+    /* Altura del icono */
+    width: 40px;
+    /* Ancho del icono */
+    vertical-align: middle;
+    /* Alinea verticalmente con el texto (si lo hubiera) */
+    margin-right: 12px;
+    /* Margen a la derecha */
+    object-fit: contain;
+    /* Asegura que la imagen se vea completa sin distorsión */
+}
+
+
+/* ----- SECCIÓN HERO (PRINCIPAL) ----- */
+.hero {
+    /* Fondo con gradiente oscuro superpuesto a una imagen de marcador de posición */
+    background: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)),
+        url('../img/imagen_1.jpg') center/cover no-repeat;
+    height: 500px;
+    /* Altura de la sección */
+    display: flex;
+    /* Habilita Flexbox */
+    align-items: center;
+    /* Centra verticalmente el contenido */
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+}
+
+/* Estilos para el contenido dentro de la sección hero */
+.hero-content {
+    text-align: center;
+    /* Centra el texto */
+    color: #fff;
+    /* Color del texto */
+}
+
+/* Estilos para el encabezado H1 en la sección hero */
+.hero-content h1 {
+    font-size: 3rem;
+    /* Tamaño de la fuente */
+    margin-bottom: 1rem;
+    /* Margen inferior */
+}
+
+/* Estilos para el párrafo en la sección hero */
+.hero-content p {
+    font-size: 29px;
+    /* Tamaño de la fuente 1.8rem equivalente a 16px */
+    opacity: 0.85;
+    /* Opacidad para un efecto más suave */
+}
+
+
+/* ----- ESTILOS GENERALES PARA SECCIONES ----- */
+section {
+    padding: 60px 20px;
+    /* Relleno para todas las secciones */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    /* Contenedor principal centrado y con ancho máximo */
+}
+
+/* ----- SECCIÓN SOBRE NOSOTROS (ABOUT) ----- */
+/* Estilos para el contenedor de la sección 'about' */
+.about .container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Alineación flexible con espacio */
+}
+
+.about-img {
+    width: 200px;
+    border-radius: 50%;
+    /* Estilos para la imagen de perfil (redondeada) */
+}
+
+.about-text h2 {
+    margin-bottom: 10px;
+    /* Margen inferior para el encabezado */
+}
+
+/* ----- SECCIÓN SERVICIOS (SERVICES) ----- */
+/* Estilos para el contenedor de tarjetas de servicios */
+.services .cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Flex-wrap lo que hace es que si el contenido es muy largo, se ajuste a la pantalla */
+    /* Flexbox para tarjetas, con espacio y ajuste de línea */
+}
+
+/* Estilos para cada tarjeta de servicio */
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    flex: 1; /* Flex-grow: 1; es el valor por defecto, lo que hace es que el elemento se expanda para ocupar el espacio disponible */
+    min-width: 200px;
+    border-radius: 8px; /* Bordes redondeados */
+    /* Fondo, relleno, crecimiento flexible, ancho mínimo y bordes redondeados */
+}
+
+/* ----- SECCIÓN PORTAFOLIO (PORTFOLIO) ----- */
+/* Estilos para la galería de imágenes del portafolio */
+.portfolio .gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Flex-wrap lo que hace es que si el contenido es muy largo, se ajuste a la pantalla */
+    /* Flexbox para imágenes, con espacio y ajuste de línea */
+}
+
+/* Estilos para cada imagen en el portafolio */
+.portfolio img {
+    width: calc(33% - 13.33px); /* Ancho calculado para 3 columnas (aprox.), bordes redondeados */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* ----- SECCIÓN TESTIMONIOS (TESTIMONIAL) ----- */
+.testimonial {
+    background: #eee; /* Color de fondo para la sección */
+}
+
+.testimonial blockquote {
+    font-style: italic; /* Cursiva */
+    text-align: center; /* Centrado */
+    max-width: 600px; /* Ancho máximo */
+    margin: 0 auto; /* Margen automático */
+}
+
+/* ----- SECCIÓN CONTACTO (CONTACT) ----- */
+/* Estilos para el formulario de contacto */
+.contact form {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; /* Espacio entre campos */
+}
+
+/* Estilos para los campos de entrada y área de texto */
+.contact input,
+.contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* Relleno, borde y bordes redondeados */
+}
+
+/* Estilos para el botón de envío del formulario */
+.contact button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+    /* Relleno, sin borde, bordes redondeados, color de fondo, color de texto y cursor */
+}
+
+/* Estilos para el mensaje de confirmación del formulario */
+.form-message {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 4px;
+    text-align: center;
+    display: none; /* Oculto por defecto, JavaScript lo mostrará */
+}
+
+.form-message.success {
+    background-color: #d4edda; /* Verde claro para éxito */
+    color: #155724; /* Texto verde oscuro */
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    background-color: #f8d7da; /* Rojo claro para error */
+    color: #721c24; /* Texto rojo oscuro */
+    border: 1px solid #f5c6cb;
+}
+
+/* ----- PIE DE PÁGINA (FOOTER) ----- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: #fff;
+    /* Texto centrado, relleno, color de fondo oscuro y texto blanco */
+}
+
+/* ----- DISEÑO RESPONSIVE (ADAPTABLE) ----- */
+/* Media query para pantallas con ancho máximo de 768px (tablets y móviles) */
+@media (max-width: 768px) {
+
+    /* Muestra el botón de menú hamburguesa */
+    .toggle-menu {
+        display: block;
+    }
+
+    /* Estilos para el menú en modo responsivo */
+    .menu {
+        flex-direction: column;
+        /* Apila los elementos verticalmente */
+        width: 100%;
+        /* Ocupa todo el ancho */
+        display: none;
+        /* Oculto por defecto (se mostrará con JavaScript) */
+        background: #222;
+        /* Color de fondo oscuro */
+    }
+
+    /* Clase para mostrar el menú cuando está activo */
+    .menu.active {
+        display: flex;
+    }
+
+    /* Margen para los elementos del menú en modo responsivo */
+    .menu li {
+        margin: 10px 0;
+    }
+
+    /* Ajustes para la sección 'about' en modo responsivo */
+    .about .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Apila los elementos y centra el texto */
+    /* Ajustes para las imágenes del portafolio en modo responsivo */
+    .portfolio img {
+        width: 100%;
+    }
+
+    /* Las imágenes ocupan todo el ancho disponible */
+}

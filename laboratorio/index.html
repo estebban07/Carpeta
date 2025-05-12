@@ -1,0 +1,191 @@
+<!-- index.html -->
+<!-- Declaración del tipo de documento, indica que es un HTML5 -->
+<!DOCTYPE html>
+<!-- Etiqueta raíz del documento HTML, lang="es" indica que el idioma principal es español -->
+<html lang="es">
+
+<!-- Cabecera del documento, contiene metadatos y enlaces a recursos -->
+
+<head>
+    <!-- Especifica la codificación de caracteres como UTF-8, compatible con la mayoría de los caracteres especiales -->
+    <meta charset="UTF-8" />
+    <!-- Configura la vista para dispositivos móviles, asegurando que el ancho sea el del dispositivo y la escala inicial sea 1.0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título que aparecerá en la pestaña del navegador -->
+    <title>Mi Primera Página Web</title>
+    <!-- Enlace a la hoja de estilos CSS externa -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<!-- Cuerpo del documento, contiene el contenido visible de la página -->
+
+<body>
+
+    <!-- SECCIÓN DE LA BARRA DE NAVEGACIÓN -->
+    <!-- El elemento header es una etiqueta semántica de HTML5 que representa la cabecera de una página web o sección.
+         Es importante porque:
+         - Ayuda a los motores de búsqueda y lectores de pantalla a entender la estructura del sitio
+         - Normalmente contiene elementos de navegación principales, logo y título del sitio
+         - Mejora la accesibilidad y el SEO de la página
+         - Proporciona una estructura semántica clara y significativa al documento
+         - Suele aparecer al inicio y se mantiene consistente en todas las páginas del sitio (fija la barra de navegación en la parte superior)
+    -->
+    <header>
+        <!-- Elemento de navegación -->
+        <!-- La etiqueta nav es una etiqueta semántica de HTML5 que representa una sección de una página que contiene enlaces de navegación. -->
+        <nav class="navbar">
+            <!-- Contenedor del logo -->
+            <!-- La etiqueta div es una etiqueta semántica de HTML5 que representa una sección de una página. -->
+            <div class="logo">
+                <!-- Comentario: Enlace comentado para el logo -->
+                <!-- <a href="#home">MiLogo</a> -->
+                <!-- Imagen del logo con una clase para estilizar y texto alternativo -->
+                <img src="img/logo.png" alt="Logo" class="nav-icon">
+            </div>
+            <!-- Botón para mostrar/ocultar el menú en dispositivos móviles -->
+            <button class="toggle-menu" id="toggleMenu">☰</button>
+            <!-- Lista no ordenada que contiene los enlaces del menú -->
+            <ul class="menu" id="menu">
+                <!-- Elemento de lista con un enlace a la sección de Inicio -->
+                <li><a href="#home">Inicio</a></li>
+                <!-- Elemento de lista con un enlace a la sección Sobre nosotros -->
+                <li><a href="#about">Sobre nosotros</a></li>
+                <!-- Elemento de lista con un enlace a la sección Servicios -->
+                <li><a href="#services">Servicios</a></li>
+                <!-- Elemento de lista con un enlace a la sección Portafolio -->
+                <li><a href="#portfolio">Portafolio</a></li>
+                <!-- Elemento de lista con un enlace a la sección Contacto -->
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN HERO O DE INICIO (HERO Significa héroe, es decir, el personaje principal de la página) -->
+    <!-- La etiqueta section es una etiqueta semántica de HTML5 que representa una sección de una página. -->
+    <!-- Atributo id para enlazar desde la barra de navegación, clase para estilizar -->
+    <section id="home" class="hero">
+        <!-- Contenedor para el contenido de la sección hero -->
+        <div class="hero-content">
+            <!-- Encabezado principal de la sección -->
+            <h1>¡Bienvenidos a Mi Web!</h1>
+            <!-- Párrafo descriptivo -->
+            <p>Aprendiendo a programar</p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE NOSOTROS -->
+    <!-- La etiqueta section es una etiqueta semántica de HTML5 que representa una sección de una página. -->
+    <!-- Atributo id para enlazar desde la barra de navegación, clase para estilizar -->
+    <section id="about" class="about">
+        <!-- Contenedor principal para la sección -->
+        <div class="container">
+            <!-- Imagen de perfil con texto alternativo y clase para estilizar -->
+            <img src="img/imagen_1.jpg" alt="Foto de perfil" class="about-img" />
+            <!-- Contenedor para el texto de la sección -->
+            <div class="about-text">
+                <!-- Encabezado de la sección -->
+                <h2>Sobre nosotros</h2>
+                <!-- Párrafo con texto de ejemplo (Lorem ipsum) -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE SERVICIOS -->
+    <section id="services" class="services">
+        <!-- Contenedor principal para la sección -->
+        <div class="container">
+            <!-- Encabezado de la sección -->
+            <h2>Servicios</h2>
+            <!-- Contenedor para las tarjetas de servicios -->
+            <div class="cards">
+                <!-- Tarjeta individual de servicio -->
+                <div class="card">
+                    <!-- Título del servicio -->
+                    <h3>Servicio 1</h3>
+                    <!-- Descripción del servicio (Lorem ipsum) -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                </div>
+                <!-- Tarjeta individual de servicio -->
+                <div class="card">
+                    <!-- Título del servicio -->
+                    <h3>Servicio 2</h3>
+                    <!-- Descripción del servicio (Lorem ipsum) -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                </div>
+                <!-- Tarjeta individual de servicio -->
+                <div class="card">
+                    <!-- Título del servicio -->
+                    <h3>Servicio 3</h3>
+                    <!-- Descripción del servicio (Lorem ipsum) -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE PORTAFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <!-- Contenedor principal para la sección -->
+        <div class="container">
+            <!-- Encabezado de la sección -->
+            <h2>Portafolio</h2>
+            <!-- Contenedor para la galería de imágenes -->
+            <div class="gallery">
+                <!-- Imagen del proyecto con texto alternativo -->
+                <img src="img/imagen_2.jpg" alt="Proyecto 1">
+                <!-- Imagen del proyecto con texto alternativo -->
+                <img src="img/imagen_3.jpg" alt="Proyecto 2">
+                <!-- Imagen del proyecto con texto alternativo -->
+                <img src="img/imagen_4.jpg" alt="Proyecto 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE TESTIMONIO O FRASE -->
+    <section class="testimonial">
+        <!-- Contenedor principal para la sección -->
+        <div class="container">
+            <!-- Elemento para mostrar una cita o testimonio -->
+            <blockquote>
+                <!-- Texto de la cita (Lorem ipsum) -->
+                “Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.”
+                <!-- Autor de la cita -->
+                <footer>— Lorem ipsum</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CONTACTO -->
+    <section id="contact" class="contact">
+        <!-- Contenedor principal para la sección -->
+        <div class="container">
+            <!-- Encabezado de la sección -->
+            <h2>Contacto</h2>
+            <!-- Formulario de contacto, action="#" indica que se procesará en la misma página (o no se especifica un script de servidor) -->
+            <form action="#" method="post">
+                <!-- Campo de entrada para el nombre, tipo texto, placeholder como texto de ayuda, required indica que es obligatorio -->
+                <input type="text" name="nombre" placeholder="Tu nombre" required />
+                <!-- Campo de entrada para el email, tipo email, placeholder como texto de ayuda, required indica que es obligatorio -->
+                <input type="email" name="email" placeholder="Tu email" required />
+                <!-- Área de texto para el mensaje, rows="4" define la altura inicial, placeholder como texto de ayuda, required indica que es obligatorio -->
+                <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+                <!-- Botón para enviar el formulario -->
+                <button type="submit">Enviar</button>
+                <!-- Contenedor para mensajes del formulario (éxito/error) -->
+                <div id="form-message" class="form-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <!-- Párrafo con contenido del pie de página (Lorem ipsum) -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+
+</html>

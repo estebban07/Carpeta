@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span { 
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="sesion15 2.css">
+    
+</head>
+<!-- "span" eqtiqueta semantica que resalta una parte del texto -->
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sec1">inicio</a></li>
+                <li><a href="#sec2">Acerca de</a></li>
+                <li><a href="#sec3">Contactenos</a></li>  
+            </ul>
+        </nav>
+        <h1>Ejemplo de etiquetas de agrupacion</h1>
+    </header>
+
+    <div>
+        <section id="sec1">
+            <h2>seccion 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores veniam quos quasi quidem earum! Illum
+                animi at, possimus, perspiciatis voluptatum culpa doloribus temporibus commodi molestiae natus tempora
+                eos asperiores neque nemo eveniet modi assumenda similique ratione. Incidunt illum, quibusdam quidem ut
+                doloribus laudantium aut dignissimos maxime laboriosam eius optio ad.</p>
+            <button onclick="mostrarMensaje('seccion1')">mostrar el mensaje</button>
+        </section>
+
+        <section id="sec2">
+            <h2>seccion 2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae facere officiis ipsum! Consequatur
+                dignissimos voluptas delectus consequuntur, excepturi sed ipsum at repellat, ea adipisci possimus a iure
+                incidunt doloribus esse reiciendis nobis voluptatibus optio natus qui amet illo animi aperiam? Amet
+                totam consectetur quia ex, asperiores dolores quae illo iusto. Nisi, aspernatur. Quo voluptas quam natus
+                perspiciatis iure vitae laudantium. Ipsum amet iusto ex assumenda dolores officiis deserunt voluptas
+                molestias.</p>
+            <button onclick="mostrarMensaje('seccion2')">mostrar el mensaje</button>
+        </section>
+
+        <section id="sec3">
+            <h2>seccion 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic praesentium debitis, eius totam eos atque
+                explicabo saepe suscipit cupiditate sequi amet perferendis excepturi animi perspiciatis cumque, et
+                quisquam architecto ipsum eum, harum nisi! Id facere molestiae quibusdam aspernatur, accusamus amet!
+            </p>
+            <button onclick="mostrarMensaje('seccion3')">mostrar el mensaje</button>
+            <article>
+                <h3>titulo articulo 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span> Incidunt iure quaerat tempore modi itaque
+                    minima ducimus reiciendis necessitatibus! Possimus, rerum in nulla dolore quis quidem, fugiat
+                    deleniti cum mollitia nobis vel esse, sint </span>voluptatum sunt praesentium nostrum ullam amet debitis
+                    fugit blanditiis non dicta rem placeat iure? Porro, sapiente accusantium.</p>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; Esteban Henriquez</p>
+    </footer>
+    <script src="sesion15.js"></script>
+</body>
+
+</html>

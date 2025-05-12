@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Operaciones Matematicas</h1>
+        <script>
+            let a = 10;
+            let b = 5;
+
+            let suma = a + b;
+            let resta = a - b;
+            let multiplicacion = a * b;
+            let division = a / b;
+            console.log("resta es: ", resta);
+            console.log ("suma", suma);
+            console.log ("multiplicacion", multiplicacion);
+            console.log ("division", division);
+
+            alert ("suma es: " +  suma);
+            alert ("resta es: " + resta );
+            alert ("multiplicacion es: "+ multiplicacion);
+            alert ("division es: "+ division);
+
+            //ejercicio 3 de la sesion 1 (operadores logicos)
+            // == devuelve verdadero o falso si los valores son iguales 
+            // > mayor que 
+            // < menor que 
+            // >= mayor igual 
+            // <= menor o igual 
+
+            let x = 7;
+            let y = 10;
+            
+            console.log ("x es igual a y? ", x==y);
+            console.log ("x es diferente a y? ", x!=y);
+            console.log ("x mayor que y? ", x>y);
+            console.log ("x menor y? ", x<y);
+            console.log ("x mayor o igual que y? ", x>=y);
+            console.log ("x menor o igual que  y? ", x<=y);
+
+            alert ("x es diferente de  y? " + (x!=y));
+            alert ("x es igual a y? " + (x==y));
+            alert ("x mayor que y? " + (x>y));
+            alert ("x menor y? " + (x<y));
+            alert ("x mayor o igual que y? " + (x>=y));
+            alert ("x menor o igual que  y? " + (x<=y));
+
+            let isadult = true;
+            let ispermiso = true;
+
+            let puedesEntrar = isadult && ispermiso;
+            let puedessalir = isadult || ispermiso;
+            console.log ("puedes entrar? ", puedesEntrar );
+            console.log ("puedes salir? ", puedessalir );
+            alert ("puedes entrar? " + puedesEntrar );
+            alert ("puedes salir? " + puedessalir );
+
+            let nombre2 = "Dago";
+            let apellido2 = "Regino";
+            let saludo = "hola "  + nombre2 + " " + apellido2 + "!";
+            console.log (saludo);
+            alert (saludo);
+            
+            let saludocontemplaTe = `Hola, ${nombre2} ${apellido2}!`;
+            console.log (saludocontemplaTe);
+            alert (saludocontemplaTe);
+
+            
+        </script>
+         
+</body>
+</html>

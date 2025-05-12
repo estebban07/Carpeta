@@ -1,0 +1,125 @@
+/* Este es un comentario de varias líneas en CSS. */
+/* Los comentarios en CSS, al igual que en HTML y JavaScript, son ignorados por el navegador y sirven para que los programadores dejen notas y explicaciones en el código. */
+
+/*
+    Hoja de Estilos Principal (style.css)
+
+    Este archivo CSS (Cascading Style Sheets - Hojas de Estilo en Cascada) define la presentación visual
+    de la página web (index.html). CSS se encarga de cómo se ven los elementos HTML:
+    colores, fuentes, tamaños, espaciados, posicionamiento, etc.
+
+    Cada bloque de código en CSS se llama "regla". Una regla consta de dos partes principales:
+    1. Un "selector": Indica a qué elemento o elementos HTML se aplicarán los estilos.
+    2. Un "bloque de declaración": Contiene una o más "declaraciones" encerradas entre llaves {}.
+       Cada declaración es una pareja de "propiedad: valor;" que define un estilo específico.
+       Por ejemplo: `color: blue;` (la propiedad es `color` y el valor es `blue`).
+*/
+
+/* Hoja de Estilos Principal para index.html */
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Estilos para la sección principal de contenido */
+main {
+    padding: 2em;
+}
+
+/* Estilos para los botones */
+button {
+    padding: 0.5em 1em;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo para el botón al pasar el cursor sobre él */
+button:hover {
+    background-color: #005f6b;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* NUEVOS ESTILOS PARA LA NAVEGACION */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    background-color: #333;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 1000;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul {
+    flex-direction: column;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+    }
+}
+
+
+    
